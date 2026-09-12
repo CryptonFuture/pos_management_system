@@ -15,7 +15,7 @@ import {
   RefreshCcw,
 } from 'lucide-react'
 
-const PYTHON_API = 'http://localhost:8001'
+const PYTHON_API = 'https://pospython-service.vercel.app'
 
 export default function Analytics() {
   const [daily, setDaily] = useState(null)
