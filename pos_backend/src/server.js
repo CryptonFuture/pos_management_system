@@ -22,7 +22,7 @@ app.use('/api/customers', require('./routes/customers'));
 app.use('/api/sales', require('./routes/sales'));
 app.use('/api/dashboard', require('./routes/dashboard'));
 
-app.get('/api/health', (req, res) => {
+app.get('/', (req, res) => {
   res.json({ status: 'OK', message: 'POS Backend is running', timestamp: new Date() });
 });
 
